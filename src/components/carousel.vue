@@ -1,6 +1,6 @@
 <template>
 	<Carousel v-model="value3" :autoplay="setting.autoplay" :autoplay-speed="setting.autoplaySpeed" :dots="setting.dots"
-	 :radius-dot="setting.radiusDot" :trigger="setting.trigger" :arrow="setting.arrow" :height="setting.height">
+	 :radius-dot="setting.radiusDot" :trigger="setting.trigger" :arrow="setting.arrow" :easing="setting.easing" :loop="setting.loop">
 		<CarouselItem>
 			<div class="height_img_carouseitem">
 				<img src="https://picsum.photos/1024/480/?image=52" class="carousel_img_css" />
@@ -30,13 +30,14 @@
 			return {
 				value3: 0,
 				setting: {
-					autoplay: false,
-					autoplaySpeed: 2000,
+					loop:true,
+					autoplay: true,
+					autoplaySpeed: 3000,
 					dots: 'inside',
 					radiusDot: true,
 					trigger: 'click',
 					arrow: 'hover',
-					height: "auto"
+					easing:"ease"
 				}
 			}
 		},
