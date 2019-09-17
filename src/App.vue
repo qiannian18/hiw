@@ -148,9 +148,6 @@
 		.serch_css {
 			width: 30.55rem;
 		}
-/* 		.list_ul{
-			display: none;
-		} */
 		.list_ul>li {
 			width: 96%;
 			margin-left: 2%;
@@ -176,6 +173,46 @@
 			height: 4rem;
 			background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
 			background-size: 100% 100%;
+		}
+		.serch_css {
+			height: 2.8rem;
+			width: 100%;
+			border: 0rem;
+			padding-left: 0.3125rem;
+			background: rgba(255, 255, 255, .30);
+			outline: none;
+			border-radius: 0.625rem;
+		}
+		.search_nav {
+			position: relative;
+		}
+		
+		.search_nav>button {
+			position: absolute;
+			right: 2%;
+			top: 18%;
+		}
+		.serch_btn {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.975rem;
+			width: 3.525rem;
+			outline: none;
+			border-radius: 0.525rem;
+		}
+		.btn_tg {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.875rem;
+			width: 100%;
+			outline: none;
+			border-radius: 0.525rem;
 		}
 
 	}
@@ -212,41 +249,51 @@
 			background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
 			background-size: 100% 100%;
 		}
+		.serch_css {
+			height: 2.8rem;
+			width: 25.75rem;
+			border: 0rem;
+			padding-left: 0.3125rem;
+			background: rgba(255, 255, 255, .30);
+			outline: none;
+			border-radius: 0.625rem;
+		}
+		.search_nav {
+			position: relative;
+		}
+		
+		.search_nav>button {
+			position: absolute;
+			right: 2%;
+			top: 18%;
+		}
+		.serch_btn {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.975rem;
+			width: 3.525rem;
+			outline: none;
+			border-radius: 0.525rem;
+		}
+		.btn_tg {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.875rem;
+			width: 5.625rem;
+			outline: none;
+			border-radius: 0.525rem;
+		}
+		
 
 	}
 
-	.serch_css {
-		height: 2.8rem;
-		border: 0rem;
-		padding-left: 0.3125rem;
-		background: rgba(255, 255, 255, .30);
-		outline: none;
-		border-radius: 0.625rem;
-	}
-
-	.search_nav {
-		position: relative;
-	}
-
-	.search_nav>button {
-		position: absolute;
-		right: 2%;
-		top: 18%;
-	}
-
-	.serch_btn {
-		color: #fff;
-		font-size: 0.9375rem;
-		font-family: "Helvetica Neue";
-		background: linear-gradient(to left, #01A962, #2FE293);
-		border: 0rem;
-		height: 1.975rem;
-		width: 3.525rem;
-		outline: none;
-		border-radius: 0.525rem;
-	}
-
-	.btn_tg {
+/* 	.btn_tg {
 		color: #fff;
 		font-size: 0.9375rem;
 		font-family: "Helvetica Neue";
@@ -256,7 +303,7 @@
 		width: 5.625rem;
 		outline: none;
 		border-radius: 0.525rem;
-	}
+	} */
 
 	.list_ul {
 		list-style: none;
