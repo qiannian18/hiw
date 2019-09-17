@@ -47,35 +47,53 @@
 		</b-container>
 
 		<b-container fluid>
-			<b-row align-h="center"  style="margin-top: 0.625rem;">
+			<b-row align-h="center" style="margin-top: 0.625rem;">
 				<b-col lg="6" sm="7" style="padding: 0;">
 					<ul class="list_ul">
 						<li>
-							<a href="#" style="margin-left: 0.3125rem;margin-top: 0.3875rem;display: block;font-weight: 600;text-decoration:none;color: #000000;">活动线报</a>
+							<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
+							<a href="#" class="a_css">活动线报</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">有奖现金</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">话费</a>
 						</li>
 						<li>
-							2
+							<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
+							<a href="#" class="a_css">活动线报</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">有奖现金</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">话费</a>
 						</li>
 						<li>
-							3
+							<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
+							<a href="#" class="a_css">活动线报</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">有奖现金</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">话费</a>
 						</li>
 						<li>
-							4
+							<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
+							<a href="#" class="a_css">活动线报</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">有奖现金</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">话费</a>
 						</li>
 						<li>
-							5
+							<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
+							<a href="#" class="a_css">活动线报</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">有奖现金</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">话费</a>
 						</li>
 						<li>
-							6
+							<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
+							<a href="#" class="a_css">活动线报</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">有奖现金</a>
+							<a href="#" class="a_css" style="font-weight: 400;color: #878787;">话费</a>
 						</li>
 					</ul>
 				</b-col>
-				<b-col lg="4" sm="4"  style="padding: 0;margin-top: 0.625rem">
+				<b-col lg="4" sm="4" style="padding: 0;">
 					<div class="adve_img">
-						
+
 					</div>
 				</b-col>
-				
+
 
 			</b-row>
 
@@ -121,14 +139,80 @@
 	}
 </style>
 <style scoped="scoped">
-	.navbar_header {
-		background: rgba(255, 255, 255, .25);
-	}
+	/* 小屏适配 */
+	@media only screen and (max-width: 765px) {
+		.navbar_header {
+			background: rgba(255, 255, 255, .25);
+		}
 
-	@media screen and (min-width: 765px) {
 		.serch_css {
 			width: 30.55rem;
 		}
+/* 		.list_ul{
+			display: none;
+		} */
+		.list_ul>li {
+			width: 96%;
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-top: 0.3125rem;
+			height: 2.875rem;
+			background: #F5F5F5;
+			border-radius: 0.525rem;
+		}
+
+		.a_css {
+			margin-left: 0.3125rem;
+			margin-top: 0.5875rem;
+			display: block;
+			float: left;
+			font-size: 0.75rem;
+			text-decoration: none;
+			color: #000000;
+		}
+		
+		.adve_img {
+			width: 100%;
+			height: 4rem;
+			background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
+			background-size: 100% 100%;
+		}
+
+	}
+
+	/* 大屏适配 */
+	@media screen and (min-width: 1200px) {
+		.navbar_header {
+			background: rgba(255, 255, 255, .25);
+		}
+		.list_ul>li {
+			float: left;
+			width: 30%;
+			height: 2.875rem;
+			margin-top: 0.625rem;
+			margin-left: 0.625rem;
+			background: #F5F5F5;
+			border-radius: 0.525rem;
+		}
+		.a_css {
+			margin-left: 0.3125rem;
+			margin-top: 0.5875rem;
+			display: block;
+			float: left;
+			font-size: 1rem;
+			font-weight: 600;
+			text-decoration: none;
+			color: #000000;
+		}
+		
+		.adve_img {
+			width: 100%;
+			height: 6rem;
+			margin-top: 0.625rem;
+			background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
+			background-size: 100% 100%;
+		}
+
 	}
 
 	.serch_css {
@@ -178,19 +262,26 @@
 		list-style: none;
 	}
 
-	.list_ul>li {
-		float: left;
-		width: 30%;
-		height: 2.275rem;
-		margin-top:  0.625rem;
-		margin-left: 0.625rem;
-		background: #F5F5F5;
-		border-radius: 0.525rem;
-	}
-	.adve_img{
+/* 	.adve_img {
 		width: 100%;
-		height: 5rem;
+		height: 6rem;
+		margin-top: 0.625rem;
 		background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
-		background-size:100% 100%; 
+		background-size: 100% 100%;
+	} */
+
+	.a_css {
+		margin-left: 0.3125rem;
+		margin-top: 0.5875rem;
+		display: block;
+		float: left;
+		font-size: 1rem;
+		font-weight: 600;
+		text-decoration: none;
+		color: #000000;
+	}
+
+	.a_css:hover {
+		color: #2FE293;
 	}
 </style>
