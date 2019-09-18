@@ -9,9 +9,9 @@
 				<input type="text" class="serch_css" />
 				<button type="button" class="serch_btn">搜索</button>
 			</b-navbar-nav>
-			<b-navbar-nav>
+		<!-- 	<b-navbar-nav>
 				<button type="button" class="btn_tg">投稿</button>
-			</b-navbar-nav>
+			</b-navbar-nav> -->
 
 		</b-collapse>
 	</b-navbar>
@@ -124,6 +124,7 @@
 			width: 5.625rem;
 			outline: none;
 			border-radius: 0.525rem;
+		
 		}
 	}
 </style>
