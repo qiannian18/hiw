@@ -11,8 +11,8 @@
 				<li>
 					<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
 					<a href="#" class="a_css">活动线报</a>
-					<a href="#" class="a_css_a">有奖现金</a>
-					<a href="#" class="a_css_a">话费</a>
+					<a href="#" class="a_css_a">有奖活动</a>
+					<a href="#" class="a_css_a">活动教程</a>
 				</li>
 				<li>
 					<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
@@ -37,9 +37,9 @@
 				</li>
 				<li>
 					<Icon type="ios-flame-outline" size="24" color="#2FE293" style="float: left;margin-top: 0.5125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">活动线报</a>
-					<a href="#" class="a_css_a">有奖现金</a>
-					<a href="#" class="a_css_a">话费</a>
+					<a href="#" class="a_css">网络资讯</a>
+					<a href="#" class="a_css_a">热点新闻</a>
+					<a href="#" class="a_css_a">网赚鸡汤</a>
 				</li>
 			</ul>
 
