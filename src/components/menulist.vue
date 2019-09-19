@@ -95,7 +95,7 @@
 		.adve_img {
 			width: 100%;
 			height: 4rem;
-			background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
+			background: url("../img/bg.png") no-repeat;
 			background-size: 100% 100%;
 		}
 
@@ -153,7 +153,7 @@
 			width: 100%;
 			height: 6rem;
 			margin-top: 0.625rem;
-			background: url("https://picsum.photos/1024/480/?image=52") no-repeat;
+			background: url("../img/bg.png") no-repeat;
 			background-size: 100% 100%;
 			border-radius: 0.225rem;
 		}

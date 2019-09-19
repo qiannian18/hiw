@@ -3,22 +3,22 @@
 	 :radius-dot="setting.radiusDot" :trigger="setting.trigger" :arrow="setting.arrow" :easing="setting.easing" :loop="setting.loop">
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="https://picsum.photos/1024/480/?image=52" class="carousel_img_css" />
+				<img src="../img/bg1.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="https://picsum.photos/1024/480/?image=52" class="carousel_img_css" />
+				<img src="../img/bg1.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="https://picsum.photos/1024/480/?image=52" class="carousel_img_css" />
+				<img src="../img/bg1.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="https://picsum.photos/1024/480/?image=52" class="carousel_img_css" />
+				<img src="../img/bg1.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 	</Carousel>
@@ -30,14 +30,14 @@
 			return {
 				value3: 0,
 				setting: {
-					loop:true,
+					loop: true,
 					autoplay: true,
 					autoplaySpeed: 3000,
 					dots: 'inside',
 					radiusDot: true,
 					trigger: 'click',
 					arrow: 'hover',
-					easing:"ease"
+					easing: "ease"
 				}
 			}
 		},
@@ -50,6 +50,7 @@
 		.height_img_carouseitem {
 			height: 18.75rem;
 		}
+
 		.carousel_img_css {
 			width: 100%;
 			height: 100%;
@@ -59,9 +60,10 @@
 	/* 大屏适配 */
 	@media screen and (min-width: 1200px) {
 		.height_img_carouseitem {
-			height: 28rem;
+			height: 28.125rem;
 		}
-			.carousel_img_css {
+
+		.carousel_img_css {
 			width: 100%;
 			height: 100%;
 		}
