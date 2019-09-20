@@ -86,6 +86,7 @@
 			margin-left: 0.3125rem;
 			margin-top: 0.5875rem;
 			display: block;
+			overflow: hidden;
 			float: left;
 			font-size: 1rem;
 			text-decoration: none;
@@ -136,6 +137,7 @@
 			margin-left: 0.625rem;
 			background: #F5F5F5;
 			border-radius: 0.525rem;
+			overflow: hidden;
 		}
 
 		.a_css {
@@ -164,6 +166,7 @@
 
 		.list_ul {
 			list-style: none;
+			overflow: hidden;
 		}
 
 		.shuxian {
@@ -184,6 +187,7 @@
 			font-weight: 300;
 			text-decoration: none;
 			color: #000000;
+			
 		}
 
 		.a_css_a:hover {

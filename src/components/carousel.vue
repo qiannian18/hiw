@@ -3,22 +3,22 @@
 	 :radius-dot="setting.radiusDot" :trigger="setting.trigger" :arrow="setting.arrow" :easing="setting.easing" :loop="setting.loop">
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="../img/bg1.png" class="carousel_img_css" />
+				<img src="../img/bg.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="../img/bg1.png" class="carousel_img_css" />
+				<img src="../img/bg.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="../img/bg1.png" class="carousel_img_css" />
+				<img src="../img/bg.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 		<CarouselItem>
 			<div class="height_img_carouseitem">
-				<img src="../img/bg1.png" class="carousel_img_css" />
+				<img src="../img/bg.png" class="carousel_img_css" />
 			</div>
 		</CarouselItem>
 	</Carousel>

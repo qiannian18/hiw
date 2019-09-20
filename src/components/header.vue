@@ -1,25 +1,35 @@
 <template>
-	<b-navbar toggleable="lg" class="navbar_header" fixed="top">
-		<b-navbar-brand href="#">Hi网</b-navbar-brand>
 
-		<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+	<b-container fluid>
+		<b-navbar toggleable="lg" class="navbar_header" fixed="top">
+			<b-navbar-brand href="#">Hi网</b-navbar-brand>
 
-		<b-collapse id="nav-collapse" is-nav>
-			<b-navbar-nav style="margin: auto;" class="search_nav">
-				<input type="text" class="serch_css" />
-				<button type="button" class="serch_btn">搜索</button>
-			</b-navbar-nav>
-		<!-- 	<b-navbar-nav>
-				<button type="button" class="btn_tg">投稿</button>
-			</b-navbar-nav> -->
+			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-		</b-collapse>
-	</b-navbar>
+			<b-collapse id="nav-collapse" is-nav>
+				<b-navbar-nav style="margin: auto;" class="search_nav">
+					<input type="text" class="serch_css" />
+					<button type="button" class="serch_btn">搜索</button>
+				</b-navbar-nav>
+			</b-collapse>
+		</b-navbar>
+		</div>
+	</b-container>
+
 </template>
 
 <script>
 	export default {
-		
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			change(status) {
+				
+			}
+		}
 	}
 </script>
 
@@ -77,9 +87,20 @@
 	/* 大屏适配 */
 	@media screen and (min-width: 1200px) {
 		.navbar_header {
+			/* background: #fff; */
 			background: rgba(255, 255, 255, .25);
 		}
 
+		.navbar_header2 {
+			background: #fff;
+
+		}
+
+		.nav_hidden {
+			display: none;
+		}
+
+		.nav_hidden2 {}
 
 
 		.serch_css {
@@ -87,6 +108,7 @@
 			width: 28.75rem;
 			border: 0rem;
 			padding-left: 0.3125rem;
+			/* background:  #dcdee2; */
 			background: rgba(255, 255, 255, .30);
 			outline: none;
 			border-radius: 0.625rem;
@@ -124,7 +146,7 @@
 			width: 5.625rem;
 			outline: none;
 			border-radius: 0.525rem;
-		
+
 		}
 	}
 </style>
