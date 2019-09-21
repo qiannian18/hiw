@@ -1,0 +1,1 @@
+export var myarticlelist = () => import("./articlelist.vue")

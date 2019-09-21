@@ -41,6 +41,14 @@
 		.navbar_header {
 			background: rgba(255, 255, 255, .25);
 		}
+		
+		.nav_none {
+			display: none;
+		}
+		
+		.nav_show {
+			display: none;
+		}
 
 		.serch_css {
 			height: 2.8rem;

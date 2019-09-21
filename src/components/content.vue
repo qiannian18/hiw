@@ -78,7 +78,7 @@
 		<b-row class="justify-content-md-center">
 			<b-col lg="3">
 				<div style="color: #01A962;font-size: 1.375rem;">
-					活动线报
+					赚友反馈
 				</div>
 				<div class="content_class">
 					<ul>
@@ -100,7 +100,7 @@
 			</b-col>
 			<b-col lg="3">
 				<div style="color: #01A962;font-size: 1.375rem;">
-					软件工具
+					秒杀好货
 				</div>
 				<div class="content_class">
 					<ul>
@@ -166,7 +166,6 @@
 			border-radius: 0.3125rem;
 
 		}
-
 		ul>li {
 			height: 2.075rem;
 			padding-top: 0.3125rem;
@@ -175,7 +174,7 @@
 		}
 
 		.content_css {
-			width:82%;
+			width: 82%;
 			float: left;
 		}
 

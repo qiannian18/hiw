@@ -1,41 +1,40 @@
 <template>
 	<div>
-		<myheader></myheader>
-		<!-- 轮播部分 -->
-		<b-container fluid style="margin: 0;padding: 0">
-			<mycarousel></mycarousel>
+		<b-container fluid style="padding: 0;">
+			<b-row class="justify-content-md-center" style="margin: 0;padding: 0;">
+				<b-col lg="10">
+					<Breadcrumb>
+						<BreadcrumbItem to="/" style="font-size: 1.125rem;">首页</BreadcrumbItem>
+						<BreadcrumbItem style="font-size: 1.125rem;">线报</BreadcrumbItem>
+					</Breadcrumb>
+				</b-col>
+				<Divider />
+			</b-row>
 		</b-container>
-		<myhiddennav></myhiddennav>
-		<b-container fluid>
-			<mymenulist></mymenulist>
-		</b-container>
-		<Divider />
-		<b-container fluid>
-			<router-view></router-view>
-		</b-container>
+
+		<myarticlelist></myarticlelist>
+
 	</div>
 
 </template>
 
 <script>
 	import {
-		myheader,
-		mycarousel,
-		mymenulist,
-		myhiddennav,
 		myhotlist,
 		mycontent,
 		myfooter
 	} from "../components"
+
+	import {
+		myarticlelist
+	} from "./list/"
+
 	export default {
 		components: {
-			myheader,
-			mycarousel,
-			mymenulist,
-			myhiddennav,
 			myhotlist,
 			mycontent,
-			myfooter
+			myfooter,
+			myarticlelist
 		},
 	}
 </script>

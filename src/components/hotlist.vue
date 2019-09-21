@@ -16,7 +16,6 @@
 					</CarouselItem>
 				</Carousel>
 			</div>
-
 		</b-col>
 		<b-col xl="5" class="col_css">
 			<div>
@@ -39,11 +38,7 @@
 								</Tooltip>
 							</div>
 						</li>
-					</ul>
-				</div>
 
-				<div class="card_css">
-					<ul>
 						<li>
 							<div>
 								<Tooltip content="万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，" placement="top" :max-width="Tooltipmaxwidth">
@@ -131,7 +126,7 @@
 		.card_css {
 			width: 100%;
 			float: left;
-			height: 25rem;
+			height: 50rem;
 			border: 1px solid #dcdee2;
 			background: #fff;
 			border-radius: 0.3125rem;
@@ -214,7 +209,7 @@
 
 		.card_css {
 			padding: 0.0625rem;
-			width: 49%;
+			width: 99%;
 			float: left;
 			margin-right: 1%;
 			height: 25rem;
@@ -222,8 +217,11 @@
 			background: #fff;
 			border-radius: 0.3125rem;
 		}
-
+		
+		
 		ul>li {
+			width: 50%;
+			float: left;
 			height: 2.075rem;
 			padding-top: 0.3125rem;
 			overflow: hidden;

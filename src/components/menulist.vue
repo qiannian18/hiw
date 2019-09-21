@@ -3,9 +3,8 @@
 		<b-col lg="10" style="padding: 0;">
 			<ul class="list_ul">
 				<li>
-					<Icon type="logo-bitcoin" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">我要赚钱</a>
-					<Button type="success" class="btn_baozan" ghost @click="value1 = true">查看任务</Button>
+					<Icon type="md-volume-up" size="24" color="red" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
+					<a href="#" class="a_css" style="color: red;" @click="value1 = true">站长推荐任务点击查看</a>
 				</li>
 				<li>
 					<Icon type="md-notifications" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
@@ -85,12 +84,6 @@
 			color: #000000;
 		}
 
-		.adve_img {
-			width: 100%;
-			height: 4rem;
-			background: url("../img/bg.png") no-repeat;
-			background-size: 100% 100%;
-		}
 
 		.list_ul {
 			list-style: none;
@@ -141,15 +134,6 @@
 			font-weight: 600;
 			text-decoration: none;
 			color: #000000;
-		}
-
-		.adve_img {
-			width: 100%;
-			height: 6rem;
-			margin-top: 0.625rem;
-			background: url("../img/bg.png") no-repeat;
-			background-size: 100% 100%;
-			border-radius: 0.225rem;
 		}
 
 		.a_css:hover {
