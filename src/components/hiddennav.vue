@@ -1,99 +1,158 @@
 <template>
-	<Affix :offset-top="60" @on-change="change">
-		<b-container fluid :class="navclass">
+	<Affix @on-change="change">
+		<b-container fluid style="padding: 0;" :class="navclass">
 			<div>
-				<b-navbar class="nav_bar_show_css" style="padding: 0;height: 2.425rem;">
-					<div style="width: 18.75rem;height: 100%;margin: auto;">
-						<Dropdown style="margin-left: 1.25rem">
-							<a href="javascript:void(0)" class="la_css">
-								活动线报
-								<Icon type="ios-arrow-down"></Icon>
-							</a>
-							<DropdownMenu slot="list">
-								<DropdownItem>驴打滚</DropdownItem>
-								<DropdownItem>炸酱面</DropdownItem>
-								<DropdownItem>豆汁儿</DropdownItem>
-								<DropdownItem>冰糖葫芦</DropdownItem>
-								<DropdownItem>北京烤鸭</DropdownItem>
-							</DropdownMenu>
-						</Dropdown>
-						<Dropdown style="margin-left: 1.25rem;">
-							<a href="javascript:void(0)" class="la_css">
-								活动线报
-								<Icon type="ios-arrow-down"></Icon>
-							</a>
-							<DropdownMenu slot="list">
-								<DropdownItem>驴打滚</DropdownItem>
-								<DropdownItem>炸酱面</DropdownItem>
-								<DropdownItem>豆汁儿</DropdownItem>
-								<DropdownItem>冰糖葫芦</DropdownItem>
-								<DropdownItem>北京烤鸭</DropdownItem>
-							</DropdownMenu>
-						</Dropdown>
-					</div>
-
+				<b-navbar toggleable="lg" class="navbar_header">
+					<b-navbar-brand href="#">Hi网</b-navbar-brand>
+					<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+					<b-collapse id="nav-collapse" is-nav>
+						<b-navbar-nav style="margin: auto;" class="search_nav">
+							<input type="text" class="serch_css" />
+							<button type="button" class="serch_btn">搜索</button>
+						</b-navbar-nav>
+					</b-collapse>
 				</b-navbar>
 			</div>
 		</b-container>
 	</Affix>
 </template>
-
 <script>
-	export default{
-		data(){
+	export default {
+		data() {
 			return {
-				navclass: "navbar_none",
+				navclass: "nav_none",
 			}
 		},
-		methods:{
-			
+		methods: {
 			change(status) {
 				if (status) {
-					this.navclass = "navbar_show"
+					this.navclass = "nav_show"
 				} else {
-					this.navclass = "navbar_none"
+					this.navclass = "nav_none"
 				}
-			
+
 			}
 		}
 	}
 </script>
 
 <style scoped="scoped">
-	/* 小屏适配 */
 	@media only screen and (max-width: 765px) {
-		.navbar_none {
-			display: none;
+		.navbar_header {
+			background: rgba(255, 255, 255, .25);
 		}
-	
-		.navbar_show {
-			display: none;
+
+		.serch_css {
+			height: 2.8rem;
+			width: 100%;
+			border: 0rem;
+			padding-left: 0.3125rem;
+			background: rgba(255, 255, 255, .30);
+			outline: none;
+			border-radius: 0.625rem;
+		}
+
+		.search_nav {
+			position: relative;
+		}
+
+		.search_nav>button {
+			position: absolute;
+			right: 2%;
+			top: 18%;
+		}
+
+		.serch_btn {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.975rem;
+			width: 3.525rem;
+			outline: none;
+			border-radius: 0.525rem;
+		}
+
+		.btn_tg {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.875rem;
+			width: 100%;
+			outline: none;
+			border-radius: 0.525rem;
 		}
 	}
-	
+
 	/* 大屏适配 */
 	@media screen and (min-width: 1200px) {
-		.navbar_none {
+		.navbar_header {
+			background: #fff;
+			border-bottom: 0.03125rem solid #dcdee2;
+		}
+
+		.nav_hidden {
 			display: none;
-			padding: 0;
-			z-index: 888;
 		}
-	
-		.navbar_show {
-			padding: 0;
-			z-index: 888;
+
+		.nav_hidden2 {}
+
+
+		.serch_css {
+			height: 2.8rem;
+			width: 28.75rem;
+			border: 0rem;
+			padding-left: 0.3125rem;
+			background: #dcdee2;
+			/* background: rgba(255, 255, 255, .30); */
+			outline: none;
+			border-radius: 0.625rem;
 		}
-	
-		.nav_bar_show_css {
-			background: rgba(255, 255, 255, .30);
+
+
+		.search_nav {
+			position: relative;
 		}
-		.la_css{
-			font-size: 1.125rem;
-			 text-decoration:none;
-			 color: black;
-			 margin-top: 0.505rem;
-			 display: block;
+
+		.search_nav>button {
+			position: absolute;
+			right: 2%;
+			top: 18%;
 		}
-	
+
+		.serch_btn {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.975rem;
+			width: 3.525rem;
+			outline: none;
+			border-radius: 0.525rem;
+		}
+
+		.btn_tg {
+			color: #fff;
+			font-size: 0.9375rem;
+			font-family: "Helvetica Neue";
+			background: linear-gradient(to left, #01A962, #2FE293);
+			border: 0rem;
+			height: 1.875rem;
+			width: 5.625rem;
+			outline: none;
+			border-radius: 0.525rem;
+		}
+
+		.nav_none {
+			display: none;
+		}
+
+		.nav_show {
+			display: block;
+		}
 	}
 </style>

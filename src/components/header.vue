@@ -1,21 +1,20 @@
 <template>
-
-	<b-container fluid>
-		<b-navbar toggleable="lg" class="navbar_header" fixed="top">
-			<b-navbar-brand href="#">Hi网</b-navbar-brand>
-
-			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-			<b-collapse id="nav-collapse" is-nav>
-				<b-navbar-nav style="margin: auto;" class="search_nav">
-					<input type="text" class="serch_css" />
-					<button type="button" class="serch_btn">搜索</button>
-				</b-navbar-nav>
-			</b-collapse>
-		</b-navbar>
-		</div>
-	</b-container>
-
+	<div>
+		<b-container fluid style="padding: 0;">
+			<div>
+				<b-navbar toggleable="lg" class="navbar_header" fixed="top">
+					<b-navbar-brand href="#">Hi网</b-navbar-brand>
+					<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+					<b-collapse id="nav-collapse" is-nav>
+						<b-navbar-nav style="margin: auto;" class="search_nav">
+							<input type="text" class="serch_css" />
+							<button type="button" class="serch_btn">搜索</button>
+						</b-navbar-nav>
+					</b-collapse>
+				</b-navbar>
+			</div>
+		</b-container>
+	</div>
 </template>
 
 <script>
@@ -26,9 +25,6 @@
 			}
 		},
 		methods: {
-			change(status) {
-				
-			}
 		}
 	}
 </script>
@@ -93,7 +89,6 @@
 
 		.navbar_header2 {
 			background: #fff;
-
 		}
 
 		.nav_hidden {
@@ -146,7 +141,8 @@
 			width: 5.625rem;
 			outline: none;
 			border-radius: 0.525rem;
-
 		}
+		
+	
 	}
 </style>

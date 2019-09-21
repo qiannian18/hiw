@@ -1,95 +1,15 @@
 <template>
 	<div id="app">
-		
-		
-			<myheader></myheader>
-			
-	
-		<!-- 轮播部分 -->
-		<b-container fluid style="margin: 0;padding: 0">
-			<mycarousel></mycarousel>
-		</b-container>
-
-		<b-container fluid>
-			<mymenulist></mymenulist>
-		</b-container>
-		<Divider />
-		<!-- <myhiddennav></myhiddennav> -->
-
-		<b-container fluid>
-			<myhotlist></myhotlist>
-		</b-container>
-
-		<b-container fluid>
-		<Divider />
-		<mycontent></mycontent>
-		</b-container>
-		
-		<b-container fluid style="height: 17.5rem;margin-top: 1.25rem;background: #515A6E;">
-			<b-row class="justify-content-md-center">
-				<b-col lg="8">
-					<div style="color: #fff;margin-top: 0.625rem;">
-						友情链接:
-						<ul>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							<li>
-								<a href="">阿里云</a>
-							</li>
-							
-						</ul>
-					</div>
-				</b-col>
-			</b-row>
-		</b-container>
-
+		<router-view></router-view>
+		<BackTop :height="100" :bottom="200">
+			<div class="top">返回顶端</div>
+		</BackTop>
 	</div>
 </template>
 
 <script>
-	import {
-		myheader,
-		mycarousel,
-		mymenulist,
-		myhiddennav,
-		myhotlist,
-		mycontent
-	} from "./components"
 	export default {
-		name: 'app',
-		components: {
-			myheader,
-			mycarousel,
-			mymenulist,
-			myhiddennav,
-			myhotlist,
-			mycontent
-		},
-		data() {
-			return {
-				value3: 0,
-				Tooltipmaxwidth: "200",
-			}
-		},
-		methods: {
-			
-		}
+
 	}
 </script>
 
@@ -101,12 +21,35 @@
 </style>
 <style scoped="scoped">
 	/* 小屏适配 */
-	@media only screen and (max-width: 765px) {}
+	@media only screen and (max-width: 765px) {
+		ul {
+			list-style-type: none;
+		}
+
+		ul>li {
+			float: left;
+			margin: 0 0.1875rem;
+		}
+
+	}
 
 	/* 大屏适配 */
 	@media screen and (min-width: 1200px) {
-		ul{
+		ul {
 			list-style-type: none;
+		}
+
+		ul>li {
+			float: left;
+			margin: 0 0.3125rem;
+		}
+
+		.top {
+			padding: 10px;
+			background: rgba(0, 153, 229, .7);
+			color: #fff;
+			text-align: center;
+			border-radius: 2px;
 		}
 
 	}
