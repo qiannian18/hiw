@@ -1,6 +1,9 @@
 <template>
 	<div id="home">
-
+		<b-container fluid style="margin-top: 1.875rem;">
+			<mymenulist></mymenulist>
+		</b-container>
+		
 		<b-container fluid>
 			<myhotlist></myhotlist>
 		</b-container>
@@ -21,23 +24,22 @@
 	import {
 		myhotlist,
 		mycontent,
-		myfooter
+		myfooter,
+		mymenulist,
 	} from "../components"
 	export default {
 		name: 'app',
 		components: {
 			myhotlist,
 			mycontent,
-			myfooter
+			myfooter,
+			mymenulist
 		},
 		data() {
 			return {
 				value3: 0,
 				Tooltipmaxwidth: "200",
 			}
-		},
-		methods: {
-
 		}
 	}
 </script>

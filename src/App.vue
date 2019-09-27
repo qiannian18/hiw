@@ -1,20 +1,9 @@
 <template>
 	<div id="app">
-		<myheader></myheader>
-		<!-- 轮播部分 -->
-		<b-container fluid style="margin: 0;padding: 0">
-			<mycarousel></mycarousel>
-		</b-container>
 
-		<myhiddennav></myhiddennav>
-
-		<b-container fluid>
-			<mymenulist></mymenulist>
-		</b-container>
-
-		<Divider />
-		
+		<!-- 嵌套部分 -->
 		<router-view></router-view>
+
 		<BackTop :height="100" :bottom="200">
 			<div class="top">返回顶端</div>
 		</BackTop>
@@ -22,29 +11,11 @@
 </template>
 
 <script>
-	import {
-		myheader,
-		mycarousel,
-		mymenulist,
-		myhiddennav
-	} from "./components"
 	export default {
 		name: 'app',
-		components: {
-			myheader,
-			mycarousel,
-			mymenulist,
-			myhiddennav,
-		},
 		data() {
-			return {
-				value3: 0,
-				Tooltipmaxwidth: "200",
-			}
+			return {}
 		},
-		methods: {
-	
-		}
 	}
 </script>
 

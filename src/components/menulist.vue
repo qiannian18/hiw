@@ -4,43 +4,41 @@
 			<ul class="list_ul">
 				<li>
 					<Icon type="md-volume-up" size="24" color="red" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css" style="color: red;" @click="value1 = true">站长推荐任务点击查看</a>
+					<a href="javascript:void(0)" class="a_css" style="color: red;" @click="value1 = true">站长推荐任务点击查看</a>
 				</li>
 				<li>
 					<Icon type="md-notifications" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">活动线报</a>
-					<a href="#" class="a_css_a">有奖活动</a>
-					<a href="#" class="a_css_a">活动教程</a>
+					<a href="javascript:void(0)" class="a_css" @click="getlist('活动线报','xianbao')">活动线报</a>
+					<a href="javascript:void(0)" class="a_css_a">有奖活动</a>
+					<a href="javascript:void(0)" class="a_css_a">活动教程</a>
 				</li>
 				<li>
 					<Icon type="md-thumbs-up" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">有好货</a>
-					<a href="#" class="a_css_a">0元购</a>
-					<a href="#" class="a_css_a">9.9包邮</a>
-					<a href="#" class="a_css_a">大额优惠</a>
+					<a href="javascript:void(0)" class="a_css">有好货</a>
+					<a href="javascript:void(0)" class="a_css_a">0元购</a>
+					<a href="javascript:void(0)" class="a_css_a">9.9包邮</a>
+					<a href="javascript:void(0)" class="a_css_a">大额优惠</a>
 				</li>
 				<li>
 					<Icon type="logo-javascript" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">编程语言</a>
-					<a href="#" class="a_css_a">java</a>
-					<a href="#" class="a_css_a">python</a>
-					<a href="#" class="a_css_a">易语言</a>
-
+					<a href="javascript:void(0)" class="a_css">编程语言</a>
+					<a href="javascript:void(0)" class="a_css_a">java</a>
+					<a href="javascript:void(0)" class="a_css_a">python</a>
+					<a href="javascript:void(0)" class="a_css_a">易语言</a>
 				</li>
 				<li>
 					<Icon type="ios-cog" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">软件工具</a>
-					<a href="#" class="a_css_a">破解软件</a>
-					<a href="#" class="a_css_a">app</a>
+					<a href="javascript:void(0)" class="a_css">软件工具</a>
+					<a href="javascript:void(0)" class="a_css_a">破解软件</a>
+					<a href="javascript:void(0)" class="a_css_a">app</a>
 				</li>
 				<li>
 					<Icon type="md-globe" size="24" color="#2FE293" style="float: left;margin-top: 0.6125rem;margin-left: 0.625rem;" />
-					<a href="#" class="a_css">网络资讯</a>
-					<a href="#" class="a_css_a">热点新闻</a>
-					<a href="#" class="a_css_a">网赚鸡汤</a>
+					<a href="javascript:void(0)" class="a_css">网络资讯</a>
+					<a href="javascript:void(0)" class="a_css_a">热点新闻</a>
+					<a href="javascript:void(0)" class="a_css_a">网赚鸡汤</a>
 				</li>
 			</ul>
-
 		</b-col>
 		<Drawer title="做任务赚钱" :closable="false" v-model="value1" :mask="true">
 			<p>Some contents...</p>
@@ -51,19 +49,30 @@
 </template>
 
 <script>
+	import bus from '../routers/eventBus.js'
 	export default {
 		data() {
 			return {
 				value1: false
 			}
-		}
+		},
+		methods: {
+			getlist(item, path) {
+				this.$router.push({
+					path: path,
+					params: {
+						items: item
+					}
+				})
+			}
+		},
 	}
 </script>
 
 <style scoped="scoped">
 	@media only screen and (max-width: 765px) {
 		.list_ul>li {
-			
+
 			width: 96%;
 			margin-left: 2%;
 			margin-right: 2%;
@@ -106,11 +115,12 @@
 		.a_css_a:hover {
 			color: #2FE293;
 		}
+
 		.btn_baozan {
 			margin-top: 0.4575rem;
 			margin-left: 1.56125rem;
 		}
-		
+
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -163,7 +173,7 @@
 			font-weight: 300;
 			text-decoration: none;
 			color: #000000;
-			
+
 		}
 
 		.a_css_a:hover {

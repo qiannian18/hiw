@@ -4,9 +4,9 @@
 			<div style="margin-top: 2.5rem" class="img_item_div">
 				<Carousel v-model="value3" :autoplay="setting.autoplay" :autoplay-speed="setting.autoplaySpeed" :dots="setting.dots"
 				 :radius-dot="setting.radiusDot" :trigger="setting.trigger" :arrow="setting.arrow" :height="setting.height" :loop="setting.loop">
-					<CarouselItem class="demo_item">
+					<CarouselItem>
 						<div class="demo-carousel">
-							<img src="../img/timg.jpg" style="width: 100%;height: 100%;" />
+							<img src="../img/timg.jpg" style="width: 100%;height: 100%;"/>
 						</div>
 					</CarouselItem>
 					<CarouselItem>
@@ -25,35 +25,20 @@
 				</div>
 				<div class="card_css">
 					<ul>
-						<li>
+						<li v-for="item in 24">
 							<div>
-								<Tooltip content="万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，" placement="top" :max-width="Tooltipmaxwidth">
+								<Tooltip :content="data.title" placement="top" :max-width="Tooltipmaxwidth">
 									<div class="remen_div_1">
-										<Tag color="success" style="float: left;">网赚鸡汤</Tag>
-										<a href="#" class="a_text_css">万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，</a>
+										<Tag :color="data.labelcolor" style="float: left;">网赚鸡汤</Tag>
+										<a href="#" class="a_text_css">{{data.title}}</a>
 									</div>
 									<div class="date_css">
-										19/9/19
-									</div>
-								</Tooltip>
-							</div>
-						</li>
-
-						<li>
-							<div>
-								<Tooltip content="万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，" placement="top" :max-width="Tooltipmaxwidth">
-									<div class="remen_div_1">
-										<Tag color="success" style="float: left;">网赚鸡汤</Tag>
-										<a href="#" class="a_text_css">万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，</a>
-									</div>
-									<div class="date_css">
-										19/9/19
+										{{data.date}}
 									</div>
 								</Tooltip>
 							</div>
 						</li>
 					</ul>
-
 				</div>
 			</div>
 		</b-col>
@@ -65,15 +50,15 @@
 				</div>
 				<div class="hotlist_class">
 					<ul>
-						<li>
+						<li v-for="item in 12">
 							<div>
-								<Tooltip content="万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，" placement="top" :max-width="Tooltipmaxwidth">
+								<Tooltip :content="data.title" placement="top" :max-width="Tooltipmaxwidth">
 									<div class="ban_div_1">
-										<Badge :count="13" class-name="title_one" style="float: left;margin-top: 0.1875rem;"></Badge>
-										<a href="#" class="a_text_css">万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错，</a>
+										<Badge :count="item" class-name="title_one" style="float: left;margin-top: 0.1875rem;"></Badge>
+										<a href="#" class="a_text_css">{{data.title}}</a>
 									</div>
 									<div class="date_css_ban">
-										19/9/19
+										{{data.date}}
 									</div>
 								</Tooltip>
 							</div>
@@ -102,6 +87,12 @@
 					arrow: 'never',
 					height: 400
 				},
+				data: {
+					"title": "万利棋牌1078二开棋牌游戏组件下载+双端APP，精华二开的界面UI挺不错",
+					"label": "网赚鸡汤",
+					"labelcolor": "success",
+					"date": "19/9/19"
+				}
 			}
 		}
 	}
@@ -217,10 +208,18 @@
 			background: #fff;
 			border-radius: 0.3125rem;
 		}
-		
-		
-		ul>li {
+
+
+		.card_css>ul>li {
 			width: 50%;
+			float: left;
+			height: 2.075rem;
+			padding-top: 0.3125rem;
+			overflow: hidden;
+			color: #000000;
+		}
+
+		.hotlist_class>ul>li {
 			float: left;
 			height: 2.075rem;
 			padding-top: 0.3125rem;
@@ -272,12 +271,12 @@
 		}
 
 		.ban_div_1 {
-			width: 75%;
+			width: 78%;
 			float: left;
 		}
 
 		.date_css_ban {
-			width: 23%;
+			width: 22%;
 			height: 100%;
 			float: right;
 		}
